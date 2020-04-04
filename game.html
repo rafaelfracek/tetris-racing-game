@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="js/tetris-racing-game-constants.js"></script>
+    <script src="js/collision-detector.js"></script>
+    <script src="js/tetris-racing-game.js"></script>
+    <script src="js/main-screen.js"></script>
+    <title>Tetris Racing</title>
+</head>
+<body>
+<div class="game-container">
+    <div class="game">
+        <div class="logo"></div>
+        <div class="level-container">
+            <div id="sound-icon" class="sound-icon"></div>
+            LEVEL <span id="level"></span>
+        </div>
+        <canvas id="game-canvas" class="game-canvas" width="261" height="522"></canvas>
+        <div id="game-resources" style="display: none;">
+            <img data-name="opponent-car-img" src="images/opponent-car.png">
+            <img data-name="player-car-img" src="images/player-car.png">
+            <img data-name="game-over-img" src="images/game-over.png">
+            <img data-name="next-level-img" src="images/next-level.png">
+            <img data-name="wall-img" src="images/wall.png">
+            <audio data-name="move-sound" src="sound/move.mp3"></audio>
+            <audio data-name="game-over-sound" src="sound/game-over.mp3"></audio>
+            <audio data-name="next-level-sound" src="sound/next-level.mp3"></audio>
+        </div>
+    </div>
+</div>
+</body>
+</html>
